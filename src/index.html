@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Your Virtual Shopping</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/logo.svg" alt="Shop logo" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button><ion-icon name="search-outline"></ion-icon></button>
+        <button><ion-icon name="cart-outline"></ion-icon></button>
+        <button><ion-icon name="menu-outline"></ion-icon></button>
+      </div>
+    </header>
+
+    <main>
+      <div class="image">
+        <img src="../assets/fone.png" alt="Hyper X ON-EAR headphones" />
+      </div>
+
+      <div class="product">
+        <h1 class="title">Hyper X ON-EAR</h1>
+        <span class="description">Wireless over-ear headphones </span>
+        <div class="rating">
+          <div class="stars">
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-half-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+          4.2 (335)
+        </div>
+        <div class="features">
+          <div class="feature">
+            <h2 class="feature__title">Driver unit</h2>
+            <span class="feature__description"
+              >70 mm, dome type (CCAW Voice Col)</span
+            >
+          </div>
+          <div class="feature">
+            <h2 class="feature__title">Frequency Response</h2>
+            <span class="feature__description">4 Hz + 100.000 Hz</span>
+          </div>
+        </div>
+        <div>
+          <span class="price">$89.99</span>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="info">
+        <ion-icon name="musical-notes-outline"></ion-icon>
+        <span>High-Resolution Audio compatible</span>
+      </div>
+      <div class="info">
+        <ion-icon name="bluetooth-outline"></ion-icon>
+        <span>Wireless connectivity using bluetooth</span>
+      </div>
+      <div class="info">
+        <ion-icon name="bluetooth-outline"></ion-icon>
+        <span>A powerful battery that lasts up to 4 hours of use</span>
+      </div>
+    </footer>
+  </body>
+</html>
