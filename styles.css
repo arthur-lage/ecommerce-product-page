@@ -89,10 +89,10 @@ header .actions button {
 }
 
 .scroll-indicator .ball {
-  width: .75rem;
-  height: .75rem;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
-  opacity: .4;
+  opacity: 0.4;
   background: var(--gray);
 }
 
@@ -102,9 +102,9 @@ header .actions button {
 }
 
 .scroll-indicator .bar {
-  width: .75rem;
+  width: 0.75rem;
   height: 7.5rem;
-  opacity: .4;
+  opacity: 0.4;
   border-radius: 50rem;
   background: var(--gray);
 }
@@ -189,7 +189,7 @@ main .product .buy span {
   font-weight: 700;
 }
 
-main .product .buy button {
+main .product .buy .add-to-cart {
   background: var(--red);
   color: #fff;
   text-transform: uppercase;
@@ -200,7 +200,7 @@ main .product .buy button {
   transition: 0.15s ease;
 }
 
-main .product .buy button:hover {
+main .product .buy .add-to-cart:hover {
   background: var(--black);
 }
 
@@ -208,13 +208,9 @@ footer {
   width: 90vw;
   background: var(--yellow);
   display: flex;
-  position: absolute;
-  bottom: 0;
   padding: 1.75rem 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 10.9rem auto 0 auto;
   align-items: center;
-  align-self: center;
   justify-content: center;
 }
 
@@ -224,6 +220,7 @@ footer .footer-content {
   justify-content: space-around;
   width: 100%;
   max-width: 880px;
+  padding: 1rem 2rem;
   margin: 0 auto;
 }
 
@@ -237,4 +234,93 @@ footer .footer-content .info {
 
 footer .footer-content .info ion-icon {
   font-size: 2.4rem;
+}
+
+@media screen and (max-width: 990px) {
+  main {
+    max-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  footer .footer-content .info {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  main {
+    flex-direction: column;
+  }
+
+  main .product {
+    margin-top: 10rem;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer {
+    margin-top: 5.45rem;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  header nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main .product .title {
+    font-size: 2.8rem;
+  }
+
+  main .product .description {
+    font-size: 1.675rem;
+  }
+
+  main .image img {
+    width: 25rem;
+  }
+
+  main .product {
+    margin-top: 5rem;
+  }
+
+  .scroll-indicator {
+    left: 1.5rem;
+  }
+
+  .scroll-indicator .ball,
+  .scroll-indicator .bar {
+    width: 0.5rem;
+  }
+
+  .scroll-indicator .ball {
+    height: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main .product .buy .price {
+    font-size: 2.4rem;
+  }
+
+  main .product .buy .add-to-cart {
+    font-size: 1.3rem;
+    padding: 1.3rem 2.8rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  main .product .buy .add-to-cart {
+    font-size: 1.2rem;
+  }
+
+  main .image img {
+    width: 22.5rem;
+  }
 }
